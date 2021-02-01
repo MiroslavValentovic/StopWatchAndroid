@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">StopWatch</string>
+    <string name="time_text_view">00:00:00:000</string>
+    <string name="start_button_text_view">Start</string>
+    <string name="stop_button_text_view">Stop</string>
+    <string name="lap_reset_button_text_view">Lap</string>
+    <string name="image_of_stop_button">Image of Stop Button</string>
+    <string name="image_of_lap_reset_button">Image of Lap/Reset Button</string>
+    <string name="image_of_start_button">Image of Start Button</string>
+    <string name="stored_lap_values">Stored Lap Values</string>
+</resources>
