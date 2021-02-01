@@ -109,10 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         mEtLaps.setMaxLines(100);
                         mEtLaps.setVerticalScrollBarEnabled(true);
                         mEtLaps.setMovementMethod(new ScrollingMovementMethod());
-                        mEtLaps.getScrollX();
-                        mEtLaps.getScrollY();
-                        mSvLaps.fullScroll(View.FOCUS_DOWN);
-
+                        mSvLaps.smoothScrollTo(0, mEtLaps.getBottom());
                     }
                 });
             }

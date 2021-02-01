@@ -122,39 +122,49 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonStop" />
 
-    <RelativeLayout
-        android:layout_width="383dp"
-        android:layout_height="206dp"
-        android:orientation="vertical"
+    <ScrollView
+        android:id="@+id/sv_laps"
+        android:layout_width="370dp"
+        android:layout_height="320dp"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline"
-        app:layout_constraintStart_toStartOf="@+id/guideline2"
-        app:layout_constraintTop_toBottomOf="@+id/textView5">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5">
 
-        <ScrollView
-            android:id="@+id/sv_laps"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fillViewport="true">
+            android:layout_height="206dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
 
             <EditText
                 android:id="@+id/et_laps"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_vertical"
                 android:autofillHints=""
                 android:background="@null"
                 android:contentDescription="@string/stored_lap_values"
                 android:gravity="center_vertical"
                 android:inputType="textMultiLine"
-                android:lineSpacingMultiplier="1.2"
+                android:isScrollContainer="true"
+                android:overScrollMode="always"
+                android:scrollbarStyle="insideInset"
+                android:scrollbars="vertical"
                 android:textColor="#f7f1e3"
                 android:textSize="26sp">
 
             </EditText>
-        </ScrollView>
 
-    </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
